@@ -14,6 +14,5 @@ public class Distance {
 		}
 		return Math.sqrt(sum);
 	}
-
 	
 }

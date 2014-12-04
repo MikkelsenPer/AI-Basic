@@ -8,7 +8,7 @@ import java.util.Random;
  * @author Per Mikkelsen
  *
  */
-public class RandomCategory {
+public class RandomGenerator {
 	private static Random randomGenerator = new Random();
 	
 	/**

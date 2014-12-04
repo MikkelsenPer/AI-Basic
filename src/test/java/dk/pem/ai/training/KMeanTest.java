@@ -1,4 +1,4 @@
-package dk.pem.ai.training.unsupervised;
+package dk.pem.ai.training;
 
 import static org.junit.Assert.*;
 
@@ -8,19 +8,20 @@ import org.junit.Before;
 import org.junit.Test;
 
 import dk.pem.ai.clustering.Cluster;
+import dk.pem.ai.training.KMean;
 
 public class KMeanTest {
 	KMean kMean;
-	double[] observationA = {10};
-	double[] observationB = {11};
-	double[] observationC = {100};
-	double[] observationD = {101};
-	double[] observationE = {105};
-	double[] observationF = {12};
-	double[] observationG = {1000};
-	double[] observationH = {1010};
-	double[] observationJ = {1};
-	double[] observationK = {1090};
+	double[] observationA = {10,12};
+	double[] observationB = {11,12};
+	double[] observationC = {100,322};
+	double[] observationD = {101,222};
+	double[] observationE = {105,111};
+	double[] observationF = {12,12};
+	double[] observationG = {1000,1111};
+	double[] observationH = {1010,1212};
+	double[] observationJ = {1,1};
+	double[] observationK = {1090,2121};
 	
 
 	@Before

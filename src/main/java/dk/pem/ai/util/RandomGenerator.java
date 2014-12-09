@@ -18,8 +18,16 @@ public class RandomGenerator {
 	 */
 	public static int getRandomZeroBasedIndex(int numberOfCategory) {
 		int category = randomGenerator.nextInt(numberOfCategory);
-		System.out.println("One random number found " +category);
 		return category;
+	}
+	
+	public static double getRandomZeroBasedIndex(double lowRange, double highRange) {
+		double number = randomGenerator.nextDouble();
+		number = (number * highRange) + lowRange;
+		if (number > highRange) {
+			return number - lowRange;
+		}
+		return number;
 	}
 
 }
